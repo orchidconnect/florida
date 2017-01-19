@@ -158,11 +158,15 @@ header .menu-right li a.button {
 
 /* FOOTER */
 footer {
-    background: #fff;
+    background: #e6e6e6;
     padding-top: 50px;
     color: #000;
     font-size: 18px;
     border-top: 1px solid #e6e6e6;
+    margin-top: 20px;
+}
+.front footer {
+    background: #fff;
 }
 footer a{
 	color: #000;
@@ -354,9 +358,12 @@ img.footer-logo {
     margin-bottom:30px;
     padding-left: 0;
     padding-right: 0;
+    padding-bottom: 60px;
     display: table;
     overflow: hidden;
+    border-right: 1px solid #e5e5e5;
 }
+
 .main-banner .column{
   padding-left: 30px !important;
 }
@@ -423,6 +430,12 @@ img.footer-logo {
     color: #7bc145;
     text-transform: uppercase;
     font-weight: bold;
+}
+.menu-accordion .is-submenu-item a.active{
+	background: none;
+    color: #7bc145;
+    text-transform: none;
+    font-weight: normal;
 }
 .menu-accordion a:hover {
     color: #7abf55;
@@ -566,35 +579,61 @@ box-shadow: 0 0 10px 2px rgba(0,0,0,0.2);
 
 /* TOPICS */
 .topics {
-    padding:30px 0;
+    padding:48px 50px;
+    margin-top: -30px;
+    border-top: 1px solid #e5e5e5;
 }
 .topics h2 {
     text-align:center;
     color: #7abf55;
+    font-size: 200%;
+    font-weight: bold;
+    margin-bottom: 25px;
 }
+.topics .large-4{
+    width: 31%;
+    margin-right: 50px;
+}
+.topics .large-4:last-child{
+    margin-right: 0px;
+}
+
 .topics article{
     background: #f2f2f2;
     padding-bottom:30px;
-    min-height: 400px;
+    min-height: 470px;
     position:relative;
 }
 .topics article h3{
-    padding: 20px 30px 0px;
+    padding: 35px 30px 0px;
     text-transform:none;
+    font-size: 150%;
 }
 .topics article p{
     padding: 00px 30px 10px;
 }
-.topics article .row{
+.topics article .article-footer{
     position:absolute;
     left:0;
     right:0;
-    bottom: 30px;
+    bottom: 35px;
     text-align: center;
     font-size:13px;
+    padding: 0 40px;
 }
-.topics article .row a{
+.topics article .article-footer .columns{
+    margin: 0;
+    padding-left: 0;
+}
+.topics article .article-footer .field-date{
+    font-size: 125%;
+    text-align: left;
+}
+.topics article .row a.btn-readmore{
 	text-transform: uppercase;
+    font-size: 125%;
+    float: right;
+    letter-spacing: 0.12em;
 }
 
 footer .block-address .menu{
@@ -626,3 +665,67 @@ footer .block-phone .horizontal{
 }
 
 /* END TOPICS */
+
+/* LICENSING */
+main .block-inner-banner .field-name-body{
+    line-height: 1.8;
+}
+.licensing-requirements .main-banner .title{
+    font-weight: bold;
+    padding-left: 62px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    color: #7bc145;
+}
+.licensing-requirements .block-inner-banner .featured-text{
+    padding: 0 20px 0 65px;
+    margin-top: -125px;
+    margin-bottom: 34px;
+    font-size: 125%;
+    font-weight: bold;
+}
+.licensing-requirements .block-inner-banner .field-name-body{
+    color: #8d8d8d;
+}
+.licensing-requirements .block-inner-banner .field-name-body .field-item{
+    padding: 0 90px 0 33px;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.licensing-requirements .block-inner-banner .field-name-body .field-item h2{
+    font-size: 148%;
+    text-transform: none;
+    font-weight: bold;
+    margin-bottom: 35px;
+}
+.licensing-requirements .block-inner-banner .field-name-body .field-item h3{
+    font-size: 124%;
+    text-transform: none;
+    font-weight: bold;
+    margin-bottom: 35px;
+}
+.licensing-requirements .block-inner-banner .field-name-body ul{
+    list-style: disc !important;
+    padding-left: 43px;
+}
+
+.block-list{
+   margin-left: 60px; 
+    display: block; 
+    margin-bottom: 20px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #e5e5e5;
+}
+.block-number{
+    font-size: 32px;
+    font-weight: bold;
+    float: left;
+    margin-top: -8px;
+    position: absolute;
+    left: 30px;
+    color: #7bc145;
+}
+
+
