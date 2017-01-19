@@ -1,4 +1,12 @@
 /* CALENDAR */
+#block-custom-search {
+padding-left: 40px;
+    padding-top: 10px;
+}
+#block-custom-search h2{
+    font-size: 195%;
+    font-weight: bold;
+}
 div#calendar {
     margin-top: -36px;
 }

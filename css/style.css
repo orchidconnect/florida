@@ -1,53 +1,48 @@
 /* FONTS */
 @font-face {
-	font-family: 'Futura Std';
-	src: url('fonts/FuturaStd-Heavy.eot');
-	src: url('fonts/FuturaStd-Heavy.eot?#iefix') format('embedded-opentype'),
-		url('fonts/FuturaStd-Heavy.woff') format('woff'),
-		url('fonts/FuturaStd-Heavy.ttf') format('truetype');
-	font-weight: 900;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'Futura Std';
-	src: url('fonts/FuturaStd-ExtraBold.eot');
-	src: url('fonts/FuturaStd-ExtraBold.eot?#iefix') format('embedded-opentype'),
-		url('fonts/FuturaStd-ExtraBold.woff') format('woff'),
-		url('fonts/FuturaStd-ExtraBold.ttf') format('truetype');
-	font-weight: 800;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'Futura Std';
-	src: url('fonts/FuturaStd-Medium.eot');
-	src: url('fonts/FuturaStd-Medium.eot?#iefix') format('embedded-opentype'),
-		url('fonts/FuturaStd-Medium.woff') format('woff'),
-		url('fonts/FuturaStd-Medium.ttf') format('truetype');
+	font-family: 'Futura New';
+	src: url('../fonts/FuturaNewMedium-Reg.eot');
+	src: url('../fonts/FuturaNewMedium-Reg.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/FuturaNewMedium-Reg.woff') format('woff'),
+		url('../fonts/FuturaNewMedium-Reg.ttf') format('truetype'),
+		url('../fonts/FuturaNewMedium-Reg.svg#FuturaNewMedium-Reg') format('svg');
 	font-weight: 500;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: 'Futura Std';
-	src: url('fonts/FuturaStd-Medium.eot');
-	src: url('fonts/FuturaStd-Medium.eot?#iefix') format('embedded-opentype'),
-		url('fonts/FuturaStd-Medium.woff') format('woff'),
-		url('fonts/FuturaStd-Medium.ttf') format('truetype');
-	font-weight: 600;
-	font-style: bold;
-}
-
-@font-face {
-	font-family: 'Futura Std';
-	src: url('fonts/FuturaStd-Bold.eot');
-	src: url('fonts/FuturaStd-Bold.eot?#iefix') format('embedded-opentype'),
-		url('fonts/FuturaStd-Bold.woff') format('woff'),
-		url('fonts/FuturaStd-Bold.ttf') format('truetype');
+	font-family: 'Futura New';
+	src: url('../fonts/FuturaNewBold-Reg.eot');
+	src: url('../fonts/FuturaNewBold-Reg.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/FuturaNewBold-Reg.woff') format('woff'),
+		url('../fonts/FuturaNewBold-Reg.ttf') format('truetype'),
+		url('../fonts/FuturaNewBold-Reg.svg#FuturaNewBold-Reg') format('svg');
 	font-weight: bold;
 	font-style: normal;
 }
+
+@font-face {
+	font-family: 'Futura New';
+	src: url('../fonts/FuturaNewHeavy-Reg.eot');
+	src: url('../fonts/FuturaNewHeavy-Reg.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/FuturaNewHeavy-Reg.woff') format('woff'),
+		url('../fonts/FuturaNewHeavy-Reg.ttf') format('truetype'),
+		url('../fonts/FuturaNewHeavy-Reg.svg#FuturaNewHeavy-Reg') format('svg');
+	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Futura New Demi';
+	src: url('../fonts/FuturaNewDemi-Reg.eot');
+	src: url('../fonts/FuturaNewDemi-Reg.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/FuturaNewDemi-Reg.woff') format('woff'),
+		url('../fonts/FuturaNewDemi-Reg.ttf') format('truetype'),
+		url('../fonts/FuturaNewDemi-Reg.svg#FuturaNewDemi-Reg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
 
 /* END FONTS */
 
@@ -57,7 +52,7 @@ html {
     -webkit-font-smoothing: antialiased !important;
 }
 body{
-    font-family: "Futura Std";
+    font-family: "Futura New";
     color: rgba(0,0,0,0.6);
     font-size: 16px;
 	font-weight: 500;
@@ -65,11 +60,12 @@ body{
 	-moz-osx-font-smoothing: grayscale;
 }
 h1,h2,h3,h4,h5,h6{
-    font-family: "Futura Std";
-    font-weight: 400;
+    font-family: "Futura New Demi";
+    font-weight: normal;
     letter-spacing: 0.5px;
     color: #000;
     text-transform: uppercase;
+    color: #2f3034;
 }
 h1{
     font-size: 36;
@@ -84,7 +80,7 @@ h3{
     font-size: 20px;
 }
 p {
-    font-family: "Futura Std";
+    font-family: "Futura New";
     color: #7f7f7f;
     font-size: 18px;
     font-weight: normal;
@@ -101,7 +97,7 @@ header .logo {
 header .top-bar {
   background: #fff;
   padding-left: 0;
-  padding-right: 0;
+  padding-right: 2px;
 }
 header .top-bar ul {
   background: #fff;
@@ -112,7 +108,8 @@ header .top-bar a {
 header .menu-top a {
     font-size: 100%;
     color: rgba(0,0,0,0.6);
-
+    letter-spacing: 0.0625em;
+    padding-top: 10px;
 }
 header .primary_menu .menu-main > li:first-of-type a:first-of-type{
     padding-left: 0;
@@ -126,11 +123,12 @@ header .secondary_menu .menu-top li a{
 header .menu-main a {
   font-weight: 900;
   text-transform: uppercase;
-  font-size: 18px;
-  padding-top: 0;
+  font-size: 110%;
+  padding-top: 3px;
+    padding-left: 3px;
   white-space: nowrap;
   padding-right: 40px;
-    letter-spacing: .7px;;
+  letter-spacing: 0.03em;
 }
 header .menu-right{
   padding: 9px 0;
@@ -176,7 +174,7 @@ footer .menu>li>a{
 }
 img.footer-logo {
     margin-left: -78px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 /* END FOOTER */
 
@@ -322,38 +320,59 @@ img.footer-logo {
 /* END SPONSORS BAR */
 
 /* BREADCRUMBS */
-.breadcrumb {
+.breadcrumbs {
     border-top: 1px solid #f2f2f2;
     overflow:hidden;
     position: relative;
-    padding-bottom: 15px;
-    padding-left: 48px;
+    padding-bottom: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
 }
-.breadcrumb a {
-    padding: 10px 0 8px; 
+.breadcrumb{
+    padding-bottom: 15px;
+    padding-left: 38px;
+}
+.breadcrumbs li{
+    font-size: 90%;
+    text-transform: none;
+    color: #0467c9;
+}
+.breadcrumbs li:last-child{
+    padding: 9px 0 8px; 
+    display: inline-block;
+    width: auto;
+}
+.breadcrumbs a {
+    padding: 9px 0 8px; 
     display: inline-block;
     color: rgba(0,0,0,0.6);
-    font-size: 14px;
+    text-decoration: none !important;
+    width: auto;
 }
-.breadcrumb img{
-    margin: 0 15px;
+.breadcrumbs a:hover{
+    color: #7bc145;
 }
-.breadcrumb::after {
-  content:'';
-  display:block;
-  height:30px;
-  box-shadow: 0 10px 15px rgba(224, 224, 224, 0.66) inset;
-  display: block;
-  margin-bottom:-30px;
-  z-index:1;
-  position: absolute;
-  top: 40px;
-  left: -10px;
-  right: -10px;
+.breadcrumbs li:not(:last-child)::after {
+    position: relative;
+    top: 4px;
+    margin-left: 1.1rem;
+    margin-right: 18px;
+    opacity: 1;
+    content: "";
+    color: #cacaca;
+    height: 12px;
+    width: 8px;
+    display: inline-block;
+    background: transparent url(../images/arrow-right-gray.png) no-repeat top left;
 }
+
 /* END BREADCRUMBS */
 
 /* MAIN-BANNER */
+.content-top{
+    background: #fff url(../images/gradient-header.png) repeat-x top left;
+}
 .main-banner {
     margin-bottom:30px;
     padding-left: 0;
@@ -375,15 +394,18 @@ img.footer-logo {
   margin-top: -60px;
   margin-bottom: 30px;
 }
-.main-banner .main-banner-inner h1{
-    padding-left: 65px;
-    font-weight: bold;
-    font-size: 36px;
-    margin-bottom: 10px;
+.main-banner h1{
+  font-family: 'Futura New Demi';
+  padding-left: 65px;
+  font-weight: normal;
+  font-size: 228%;
+  margin-bottom: 10px;
+  margin-top: 15px;
+  letter-spacing: 0.002em;
 }
 .main-banner .main-banner-inner .field-desc{
-    margin-top: -150px;
-    padding-left: 30px;
+  margin-top: -150px;
+  padding-left: 30px;
 }
 .main-banner .main-banner-inner h2,
 .main-banner .main-banner-inner p {
@@ -403,35 +425,45 @@ img.footer-logo {
 
 /* SUBMENU */
 .menu-accordion h2 {
+    font-family: 'Futura New Demi';
     color: #7bc145;
-    margin-top: 15px;
+    margin-top: 23px;
     margin-bottom: 18px;
     padding-left: 30px;
-    font-size: 24px;
+    font-size: 150%;
+    font-weight: normal;
+    letter-spacing: 0.002em;
 }
 .menu-accordion a {
     color: #000;
-    font-size: 18px;
+    font-size: 125%;
     padding: 20px;
+    letter-spacing: -0.01px;;
 }
 .menu-accordion .menu > li > a{
-    padding: 22px 22px 22px 45px;
+    padding: 22px 22px 22px 85px;
+    position: relative;
+}
+.menu > li > a img, .menu > li > a i, .menu > li > a svg{
+    margin-right: 8px;
+    position: absolute;
+    left: 44px;
 }
 .menu-accordion .menu a{
-    font-weight: bold;
+    font-weight: normal;
+    font-family: 'Futura New Demi';
 }
 .menu-accordion .menu .menu a{
     font-weight: normal;
 }
 .menu-accordion>ul>li>a {
 	padding-left: 30px !important;
-    font-weight: bold;
+    font-weight: normal;
 }
 .menu-accordion a.active{
 	background:#f2f2f2;
     color: #7bc145;
     text-transform: uppercase;
-    font-weight: bold;
 }
 .menu-accordion .is-submenu-item a.active{
 	background: none;
@@ -460,14 +492,17 @@ img.footer-logo {
 }
 .menu-accordion .submenu li a{
 	padding-left: 43px !important;
+    font-size: 115%;
+    letter-spacing: 0.35px;
 }
 .menu-accordion .submenu a::before{
 	content:'';
-	background: url(images/arrow-right-green.png) no-repeat;
+	background: url(../images/arrow-right-green.png) no-repeat;
 	color: #7abf55;
 	width: 12px;
 	height: 12px;
 	display: inline-block;
+    margin-right: 3px;
 }
 /* END SUBMENU */
 
@@ -476,6 +511,8 @@ img.footer-logo {
     background: #0472de;
     padding: 30px 20px;
     margin-top: 7px;
+    position: relative;
+    margin-top: -40px;
 }
 .blue-bg-section h1,
 .blue-bg-section h2,
@@ -491,8 +528,8 @@ img.footer-logo {
 	background: #cde3f8;
 	border-top-left-radius: 5px;
 	border-top-right-radius: 5px;
-	padding: 5px 10px;
-	margin:0 1px;
+	padding: 15px 20px;
+	margin:0 5px 0 0;
 	color:  #0472de;
 	position:relative;
 	z-index:10;
@@ -501,24 +538,25 @@ img.footer-logo {
 	position:relative
 }
 .blue-bg-section label.last{
-	margin-right:5px;
+	margin-right:10px;
 }
 .blue-bg-section label::before {
 	content:'';
 	display:block;
-	border-left: 0px solid transparent;
-	border-right: 5px solid transparent;
-	border-bottom: 31px solid #cde3f8;
-	width:30px;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 49px solid #cde3f8;
+	width:60px;
 	position:absolute;
 	top:4px;
-	right:-5px;
+	right:-10px;
+    
 }
 .blue-bg-section label.active {
 	background:#fff;
 }
 .blue-bg-section label.active::before {
-	border-bottom: 31px solid #ffffff;
+	border-bottom: 50px solid #ffffff;
 }
 .blue-bg-section form {
     text-align:right;
@@ -526,28 +564,37 @@ img.footer-logo {
 }
 .blue-bg-section input[type="submit"] {
     position: relative;
-    top: -48px;
+    top: -69px;
     background: none;
     border: none;
     color: #0472de;
-    right: 5px;
+    right: 26px;
+    text-transform: uppercase;
+    font-size: 100%;
+    letter-spacing: 0.04em;
 }
 .blue-bg-section input#search {
     text-align:center;
     border:none;
     border-radius:5px;
     border-top-right-radius:0;
+    font-size: 138%;
+    padding: 28px;
+    height: auto;
+    color: rgba(0,0,0,0.4);
+    box-shadow: inset 0 0px 0px rgba(10,10,10,0);
 }
 .blue-bg-section form::before {
     content:'';
     background: url(images/icon-search-blue.png) no-repeat;
     display:block;
-    height:20px;
-    width:20px;
-    margin-bottom: -64px;
+    height:22px;
+    width:22px;
+    margin-bottom: -92px;
     position: relative;
     z-index: 5;
-    left: 10px;
+    left: 30px;
+    top: 12px;
 }
 .block-featured {
     padding: 30px 30px 0 30px;
@@ -605,14 +652,22 @@ box-shadow: 0 0 10px 2px rgba(0,0,0,0.2);
     padding-bottom:30px;
     min-height: 470px;
     position:relative;
+    font-family: 'Futura New';
+}
+.topics article .field-desc{
+    padding: 35px 30px 0px;
 }
 .topics article h3{
-    padding: 35px 30px 0px;
+    font-family: 'Futura New';
     text-transform:none;
-    font-size: 150%;
+    font-size: 145%;
+    margin-bottom: 3px;
 }
 .topics article p{
-    padding: 00px 30px 10px;
+    line-height: 1.3;
+    font-size: 115%;
+    letter-spacing: -0.2px;
+    font-family: 'Futura New';
 }
 .topics article .article-footer{
     position:absolute;
@@ -621,40 +676,69 @@ box-shadow: 0 0 10px 2px rgba(0,0,0,0.2);
     bottom: 35px;
     text-align: center;
     font-size:13px;
-    padding: 0 40px;
+    padding: 0 30px 0 40px;
 }
 .topics article .article-footer .columns{
     margin: 0;
     padding-left: 0;
 }
 .topics article .article-footer .field-date{
-    font-size: 125%;
+    font-size: 135%;
     text-align: left;
 }
 .topics article .row a.btn-readmore{
 	text-transform: uppercase;
-    font-size: 125%;
+    font-size: 135%;
     float: right;
-    letter-spacing: 0.12em;
+    letter-spacing: 1.5px;
 }
 
 footer .block-address .menu{
     margin-left: -15px;
-    margin-top: 10px;
+    margin-top: 9px;
+}
+footer .block-address .menu li{
+    margin-bottom: 2px;
 }
 footer .block-menu-primary{
-    margin-top: 10px;
-    margin-left: -20px;
+    margin-top: 5px;
+    margin-left: -22px;
+}
+footer .block-menu-primary li{
+    margin-bottom: 2px;
+}
+footer .block-menu-primary a{
+    font-size: 105%;
 }
 footer .block-menu-secondary{
-    margin-top: 10px;
+    margin-top: 5px;
+}
+footer .block-menu-secondary a{
+    font-size: 105%;
+}
+footer .block-menu-secondary li{
+    margin-bottom: 2px;
 }
 footer .block-phone{
     margin-top: 10px;
     margin-left: 14px;
+    border: 1px solid redt;
+}
+footer .block-phone li{
+    margin-bottom: 2px;
 }
 footer .block-phone .horizontal{
     margin-top: 30px;
+}
+footer .block-phone .horizontal a{
+    position: relative;
+}
+footer .block-phone .horizontal li:first-of-type a{
+    padding-left: 0;
+}
+footer .block-phone .horizontal a img{
+    position: relative;
+    left: 0;
 }
 .region-copyrights{
     margin-top: 15px;
@@ -673,21 +757,23 @@ main .block-inner-banner .field-name-body{
     line-height: 1.8;
 }
 .licensing-requirements .main-banner .title{
-    font-weight: bold;
     padding-left: 62px;
-    margin-top: 5px;
-    margin-bottom: 15px;
     color: #7bc145;
 }
 .licensing-requirements .block-inner-banner .featured-text{
     padding: 0 20px 0 65px;
-    margin-top: -125px;
+    margin-top: -128px;
     margin-bottom: 34px;
-    font-size: 125%;
-    font-weight: bold;
+    font-size: 150%;
+    font-weight: normal;
+    font-family: 'Futura New Demi';
+    letter-spacing: -0.3px;
+    color: #2f3034;
 }
 .licensing-requirements .block-inner-banner .field-name-body{
     color: #8d8d8d;
+    padding-top: 22px;
+    letter-spacing: 0.045em;
 }
 .licensing-requirements .block-inner-banner .field-name-body .field-item{
     padding: 0 90px 0 33px;
@@ -696,19 +782,25 @@ main .block-inner-banner .field-name-body{
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-.licensing-requirements .block-inner-banner .field-name-body .field-item h2{
-    font-size: 148%;
+.licensing-requirements .block-ad{
+    margin-top: 60px;
+}
+.block-inner-banner .field-name-body .field-item h2{
+    font-size: 190%;
+    letter-spacing: -0.2px;
     text-transform: none;
-    font-weight: bold;
+    font-weight: normal;
+    margin-bottom: 25px;
+    font-family: "Futura New Demi";
+    color: #2f3034;
+}
+.block-inner-banner .field-name-body .field-item h3{
+    font-size: 144%;
+    text-transform: none;
+    font-weight: normal;
     margin-bottom: 35px;
 }
-.licensing-requirements .block-inner-banner .field-name-body .field-item h3{
-    font-size: 124%;
-    text-transform: none;
-    font-weight: bold;
-    margin-bottom: 35px;
-}
-.licensing-requirements .block-inner-banner .field-name-body ul{
+.block-inner-banner .field-name-body ul{
     list-style: disc !important;
     padding-left: 43px;
 }
@@ -718,16 +810,22 @@ main .block-inner-banner .field-name-body{
     display: block; 
     margin-bottom: 20px;
     padding-bottom: 25px;
+    padding-top: 5px;
     border-bottom: 1px solid #e5e5e5;
+    font-size: 100%;
+    
 }
 .block-number{
-    font-size: 32px;
-    font-weight: bold;
+    font-size: 225%;
+    font-weight: normal;
     float: left;
     margin-top: -8px;
     position: absolute;
     left: 30px;
     color: #7bc145;
+    font-family: 'Futura New Demi';
 }
-
+.block-ad{
+    text-align: center;
+}
 

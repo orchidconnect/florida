@@ -115,25 +115,31 @@
       </div>   
 	  <!-- END : region breadcrumbs -->		  
       
+
 	  
       <div class="row">
-
-		<!-- Start : region content LEFT -->	
-        <div class="small-full large-9 columns main-banner">
 		
-			<!-- Start : bead main-banner-inner -->
-			<div class="block block-bean main-banner-inner">
-			   <h1>EDUCATION</h1>
-				<div class="content">
-					<div class="entity entity-bean">
+		<!-- Start : region content LEFT -->
+        <div class="small-full large-9 columns main-banner">
+
+			<div class="section">
+				<h1 class="title" id="page-title">EDUCATION</h1>
+
+				<div class="region region-content">
+					<div class="block block-system block-inner-banner" id="block-system-main">
 						<div class="content">
-							<div class="field field-name-field-image">
-								<div class="field-items">
-									<div class="field-item">
-										<img src="images/banner-learn-more-earn-more.jpg" alt="learn more, earn more, here's how">
-										<div class="field-desc">
-											<h2>Learn more, Earn more, Here's how</h2>
-											<p>Choose from many educational options, including classroom, online and video learning.</p>
+							<div about="/licensing" class="node node-article">
+
+								<div class="content clearfix">
+									<div class="field field-name-field-image field-type-image field-label-hidden main-banner-inner">
+										<div class="field-items">
+											<div class="field-item even" >
+												<img src="images/banner-learn-more-earn-more.jpg" alt="learn more, earn more, here's how">
+												<div class="field-desc">
+													<h2>Learn more, Earn more, Here's how</h2>
+													<p>Choose from many educational options, including classroom, online and video learning.</p>
+												</div>
+											</div>
 										</div>
 									</div>
 								</div>
@@ -142,14 +148,13 @@
 					</div>
 				</div>
 			</div>
-			<!-- END : bead main-banner-inner -->
 			
         </div>
-		<!-- END : region content LEFT -->	
-		
-		<!-- Start : region content RIGHT -->	
+		<!-- END : region content LEFT -->
+
+		<!-- Start : region content RIGHT -->
         <div class="small-full large-3 columns menu-accordion">
-		
+
 			<!-- Start : block menu -->	
 			<div class="block block-system block-menu">
 				<h2>In This Section</h2>
@@ -165,20 +170,20 @@
 						<li><a href="#">CE Deficiency letters</a></li>
 					  </ul>
 					</li>
-					<li><a href="#"><img src="images/icon-gri.png" alt="GRI icon"> GRI</a></li>
+					<li><a href="#"><img src="images/icon-gri.png" alt="GRI icon">GRI</a></li>
 					<li><a href="#"><img src="images/icon-gri.png" alt="GRI icon"> Continuing education</a></li>
 					<li><a href="#"><img src="images/icon-videos.png" alt="Videos icon"> Training Videos</a></li>
 				  </ul>
 				</div>
 			</div>
 			<!-- END : block menu -->
-
+		
+       
         </div>
-		<!-- END : region content RIGHT -->	
+		<!-- END : region content RIGHT -->
         
       </div>
-	  <!-- END : region before content -->	
-      
+	  
 	  <!-- Start : region bottom content -->	
       <div class="row blue-bg-section">
 	  
@@ -190,7 +195,7 @@
 				<input type="radio" id="search-type-keyword" name="search-type[]" value="keyword"  checked="checked" ><label for="search-type-keyword"><span>Keyword</span></label>
 				<input type="radio" id="search-type-topic" name="search-type[]" value="keyword"><label for="search-type-topic"><span>Topic</span></label>
 				<input type="radio" id="search-type-resources" name="search-type[]" value="keyword"><label for="search-type-resources" class="last"><span>By Type of Resources</span></label>
-				<input type="text" id="search"><label for="search" class="hide">Enter search terms</label>
+				<input type="text" id="search" value="Enter search terms"><label for="search" class="hide">Enter search terms</label>
 				<input type="submit" value="Search">
 			  </form>
 			</div>
@@ -198,7 +203,7 @@
 		<!-- END : block custom search -->
 
 		<!-- Start : block -->
-		<div class="block block-system small-full large-3 columns">
+		<div class="block block-system block-ad small-full large-3 columns">
 			<div class="content">
 			    <img src="images/banner-mfrmls.jpg" alt="MFRMLS Learn how we focus on your success">
 			</div>
@@ -215,6 +220,14 @@
        
         <div class="small-full large-9 columns gray-bg-section">
           <h2>Events</h2>
+		  <!--<div class="block-filters">
+			    <a href="#" data-dropdown="drop" class="login">Dropdown Button</a><br>
+				<ul id="drop" data-dropdown-content class="f-dropdown">
+					<li><a href="#">This is a link</a></li>
+					<li><a href="#">This is another</a></li>
+					<li><a href="#">Yet another</a></li>
+				</ul>
+		  </div> -->
           <div id='calendar'></div>
         </div>
        
@@ -378,6 +391,7 @@
     </footer>
 	<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
 	<script type="text/javascript" src="bower_components/foundation-sites/dist/js/foundation.min.js"></script>
+	<script src="bower_components/foundation-sites/dist/js/plugins/foundation.dropdown.min.js"></script>
     <script src="bower_components/foundation-sites/dist/js/plugins/foundation.accordionMenu.js"></script>
     <script src="bower_components/foundation-sites/dist/js/plugins/foundation.util.motion.min.js"></script>
     <script src="bower_components/foundation-sites/dist/js/plugins/foundation.util.keyboard.min.js"></script>
