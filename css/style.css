@@ -426,14 +426,17 @@ img.footer-logo {
     padding-left: 30px;
 }
 .main-banner .main-banner-inner p{
-    font-size: 24px;
+    font-size: 150%;
     color: rgba(0,0,0,0.6);
+    letter-spacing: -0.32px;
 }
 .main-banner .main-banner-inner h2 {
     color: #7bc145;
-    font-size: 36px;
-    font-weight: bold;
+    font-size: 230%;
+    font-weight: normal;
     margin-bottom: 14px;
+    letter-spacing: -0.7px;
+    
 }
 /* END MAIN-BANNER */
 
