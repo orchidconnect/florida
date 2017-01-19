@@ -121,18 +121,19 @@ header .secondary_menu .menu-top li a{
     padding-right: 8px;
 }
 header .menu-main a {
-  font-weight: 900;
   text-transform: uppercase;
-  font-size: 110%;
+  font-size: 120%;
   padding-top: 3px;
     padding-left: 3px;
   white-space: nowrap;
-  padding-right: 40px;
-  letter-spacing: 0.03em;
+  padding-right: 35px;
+  letter-spacing: 0.04em;
 }
 header .menu-right{
   padding: 9px 0;
   position:relative;
+    float: right;
+    margin-right: 8px;
 }
 header .menu-right li a{
     font-weight: 400;
@@ -145,12 +146,18 @@ header .menu-right li:first-child a {
 header .menu-right .icon {
   height: auto;
   width: 23px;
-    margin-top: -3px;
+  margin-top: -3px;
+    float: left;
+    position: absolute;
+    left: -38px;
 }
 header .menu-right li a.button {
-    padding: 20px 40px;
+    padding: 20px 43px;
     font-size: 18px;
     color: #fff;
+}
+.top-bar .top-bar-right{
+    width: 300px;
 }
 /* END HEADER */
 
@@ -158,6 +165,7 @@ header .menu-right li a.button {
 footer {
     background: #e6e6e6;
     padding-top: 50px;
+    padding-bottom: 20px;
     color: #000;
     font-size: 18px;
     border-top: 1px solid #e6e6e6;
@@ -165,6 +173,7 @@ footer {
 }
 .front footer {
     background: #fff;
+    margin-top: 0px;
 }
 footer a{
 	color: #000;
@@ -175,6 +184,9 @@ footer .menu>li>a{
 img.footer-logo {
     margin-left: -78px;
     margin-bottom: 10px;
+}
+.region-copyrights .menu > li > a {
+    padding: 8px 20px 0 20px;
 }
 /* END FOOTER */
 
@@ -265,8 +277,10 @@ img.footer-logo {
     position: relative;
 }
 .shadow-top h3{
-    font-size: 24px;
-    font-weight: 600;
+    font-size: 150%;
+    font-family: 'Futura New Demi';
+    font-weight: normal;
+    letter-spacing: 0.5px;
 }
 .shadow-top .block.image-bg-section h3{
     margin: 30px 45px 10px 45px;
@@ -609,13 +623,13 @@ box-shadow: 0 0 10px 2px rgba(0,0,0,0.2);
     margin-bottom: 10px;
 }
 .block-featured .button{
-    font-size: 18px;
+    font-size: 120%;
     font-weight: normal;
     display: table;
     width: auto;
     padding: 20px 20px;
     background: #0E72DC;
-    margin-top: 20px;
+    margin-top: 35px;
 }
 /* END BLUE BG SECTION */
 

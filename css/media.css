@@ -1,7 +1,8 @@
 /* MEDIA QUERIES */
 @media only screen and (min-width: 1024px) { 
     .site-search.small-full {
-        max-width: 290px;
+        width: 100%;
+        max-width: 350px;
     }
     header .site-info{
     width: 340px;
