@@ -1,0 +1,89 @@
+/* CALENDAR */
+div#calendar {
+    margin-top: -36px;
+}
+.fc-right button,.fc-right h2 {
+    display: inline;
+    margin: 0 5px;
+}
+.fc-toolbar button {
+    background: none;
+    border: none;
+    box-shadow: none;
+    color: #0472de;
+}
+.fc-toolbar h2 {
+    text-transform: none;
+    font-size: 18px;
+    color: #4e4e4e;
+}
+.fc-row.fc-widget-header {
+}
+thead.fc-head {
+    display: none;
+}
+tbody.fc-body {
+}
+td.fc-widget-content {}
+.fc-scroller.fc-day-grid-container {
+    overflow: visible !important;
+    height: auto !important;
+}
+.fc-day-grid.fc-unselectable {}
+.fc-row.fc-week.fc-widget-content {
+    height: 56px !important;
+    min-height: initial !important;
+    overflow: hidden;
+}
+.fc-unthemed table {}
+.fc-unthemed thead {}
+.fc-unthemed tbody {
+}
+.fc-row .fc-content-skeleton td, .fc-row .fc-helper-skeleton td {border-color: #e6e6e6;font-size: 18px;}
+.fc-basic-view .fc-day-number, .fc-basic-view .fc-week-number{
+    float: left !important;
+    padding: 15px !important;
+}
+.fc-content-skeleton table thead {
+    background: none;
+}
+.fc-unthemed .fc-content, .fc-unthemed .fc-divider, .fc-unthemed .fc-list-heading td, .fc-unthemed .fc-list-view, .fc-unthemed .fc-popover, .fc-unthemed .fc-row, .fc-unthemed tbody, .fc-unthemed td, .fc-unthemed th, .fc-unthemed thead {
+    border-color: #e6e6e6;
+}
+.fc-unthemed .fc-row.fc-week.fc-widget-content tbody{}
+.fc-unthemed .fc-row.fc-week.fc-widget-content tbody td {
+    background: none;
+    position: relative;
+}
+.fc-unthemed td.fc-today.fc-state-highlight {
+    background: #ececec;
+}
+a.fc-day-grid-event.fc-h-event.fc-event {
+    position: relative;
+    top: -44px;
+    border-radius: 25px;
+    margin: 0;
+    margin-left: 35px;
+    width: 25px;
+    background: blue;
+    display: block;
+    line-height: 26px;
+    text-align: center;
+}
+/* END CALENDAR */
+
+/* EVENTS CALENDAR */
+.events-calendar {}
+.events-calendar .gray-bg-section{
+	padding:30px 60px;
+}
+.events-calendar .sidebar{
+	padding-top: 50px;
+}
+.events-calendar .sidebar a{
+	font-weight:bold;
+	margin-top: 15px;
+	display:block;
+	font-size:14px;
+}
+/* END EVENTS CALENDAR */
