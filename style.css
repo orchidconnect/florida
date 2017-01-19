@@ -358,12 +358,14 @@ img.footer-logo {
     margin-bottom:30px;
     padding-left: 0;
     padding-right: 0;
-    padding-bottom: 60px;
     display: table;
     overflow: hidden;
-    border-right: 1px solid #e5e5e5;
+    
 }
-
+.main-banner .block-inner-banner {
+    border-right: 1px solid #e5e5e5;
+    padding-bottom: 60px;
+}
 .main-banner .column{
   padding-left: 30px !important;
 }
@@ -402,9 +404,9 @@ img.footer-logo {
 /* SUBMENU */
 .menu-accordion h2 {
     color: #7bc145;
-    margin-top: 10px;
+    margin-top: 15px;
     margin-bottom: 18px;
-    padding-left: 20px;
+    padding-left: 30px;
     font-size: 24px;
 }
 .menu-accordion a {
