@@ -498,6 +498,9 @@ img.footer-logo {
     position: relative;
     text-transform: uppercase;
 }
+.is-accordion-submenu-parent > a::after{
+    display: none !important;
+}
 .menu > li > a img, .menu > li > a i, .menu > li > a svg{
     margin-right: 8px;
     position: absolute;
