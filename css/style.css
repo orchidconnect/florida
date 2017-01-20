@@ -50,6 +50,7 @@
 html {
     text-rendering: optimizeLegibility !important;
     -webkit-font-smoothing: antialiased !important;
+    overflow-x: hidden;
 }
 body{
     font-family: "Futura New";
@@ -63,7 +64,6 @@ h1,h2,h3,h4,h5,h6{
     font-family: "Futura New Demi";
     font-weight: normal;
     letter-spacing: 0.5px;
-    color: #000;
     text-transform: uppercase;
     color: #2f3034;
 }
@@ -120,14 +120,32 @@ header .secondary_menu .menu-top > li:first-of-type a:first-of-type{
 header .secondary_menu .menu-top li a{
     padding-right: 8px;
 }
+header .menu-main{
+    width: 100%;
+    display: block;
+}
+header .menu-main li {
+    float: left;
+    width: auto;
+    display: inline-block;
+    margin-right: 35px;
+}
+header .menu-main li:last-child{
+    margin-right: 0;
+}
 header .menu-main a {
   text-transform: uppercase;
   font-size: 120%;
   padding-top: 3px;
-    padding-left: 3px;
+  padding-left: 3px;
+  padding-right: 0;
   white-space: nowrap;
-  padding-right: 35px;
   letter-spacing: 0.04em;
+  float: left;
+  width: auto;
+}
+header .menu-main li:last-child a{
+    padding-right: 0;
 }
 header .menu-right{
   padding: 9px 0;
@@ -139,7 +157,7 @@ header .menu-right li a{
     font-weight: 400;
 }
 header .menu-right li:first-child a {
-    padding: 20px 40px 20px 0;
+    padding: 20px 45% 20px 0;
     font-size: 18px;
     color: rgba(0,0,0,0.6);
 }
@@ -157,7 +175,10 @@ header .menu-right li a.button {
     color: #fff;
 }
 .top-bar .top-bar-right{
-    width: 300px;
+    width: 30%;
+}
+.top-bar .top-bar-left {
+    width: 80%;
 }
 /* END HEADER */
 
@@ -219,7 +240,7 @@ img.footer-logo {
   position:absolute;
   left:0;
   right:0;
-  height: auto;
+  height: 100%;
   width: 100%;
   top: 0;
 }
@@ -235,11 +256,12 @@ img.footer-logo {
 .banners-sidebar {
     padding-right: 0;
     padding-left: 0;
-}
-.banners-sidebar p {
     background: #ebebeb;
     padding: 20px 33px 0;
     margin: 0;
+}
+.banners-sidebar p {
+
     text-align: center;
 }
 .banners-sidebar p:last-child {
@@ -252,7 +274,9 @@ img.footer-logo {
 	position:relative;
 	overflow: hidden;
 }
-
+.shadow-top .block{
+    min-height: 586px;
+}
 .shadow-top::before {
   content:'';
   display:block;

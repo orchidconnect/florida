@@ -59,11 +59,7 @@
  .home-slider .orbit-previous,
  .home-slider .orbit-next {}
  .home-slider .orbit-slide {}
- .home-slider .orbit-caption {
-     background: none;
-     margin-bottom: 45px;
-     margin-left: 30px;
- }
+
  .home-slider .orbit-caption img {}
  .home-slider .orbit-caption h2 {
      font-size: 200%;
@@ -75,10 +71,10 @@
  }
  .home-slider .orbit-caption{
      width: 55%;
+     background: none;
+     margin-left: 30px;
      margin-bottom: 75px;
      margin-left: 45px;
-     
-     
  }
  .home-slider .orbit-caption p {
      color: rgba(255,255,255, 0.5);
@@ -142,9 +138,12 @@
  .home-tabs .tabs-panel {
      padding: 0;
  }
- .home-tabs .tabs-panel img {
+ .home-tabs .tabs-panel .view-img {
      border: 3px solid #0472de;
  }
+.home-tabs .tabs-panel .view-img img{
+    display: block;
+}
  .home-tabs .tabs-panel .view-desc{
      padding: 29px 25px 10px 25px;
      margin-top: -5px;
