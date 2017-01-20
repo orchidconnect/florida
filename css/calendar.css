@@ -66,7 +66,8 @@ td.fc-widget-content {}
 .fc-basic-view .fc-day-number, .fc-basic-view .fc-week-number{
     float: left !important;
     padding: 5px !important;
-    margin-left: 32px;
+    /*margin-left: 32px;*/
+	margin-left: -8px;
     font-weight: normal;
 }
 .fc-content-skeleton table thead {
@@ -92,7 +93,7 @@ a.fc-day-grid-event.fc-h-event.fc-event {
     top: -55px;
     border-radius: 25px;
     margin: 0;
-    margin-left: 60px;
+    margin-left: 30px;
     width: 25px;
     background: blue;
     display: block;
