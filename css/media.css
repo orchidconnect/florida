@@ -69,6 +69,15 @@
 		top: 25px;
 		position: absolute;
 	}
+  .fc-row .fc-content-skeleton td, .fc-row .fc-helper-skeleton td {
+    border-color: #e6e6e6;
+    font-size: 160%;
+    padding: 21px 10px 21px 20px;
+  }
+	a.fc-day-grid-event.fc-h-event.fc-event {
+			top: 5px;
+			margin-left: 25px;
+	}
 }
 @media only screen and (max-width: 1280px) {
 	header .menu-main li {
@@ -341,7 +350,7 @@
 			font-size: 130%;
 		}
 	}
-	@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
 		.licensing-requirements .block-inner-banner .featured-text {
 			padding: 70px 20px 0 65px;
 			font-size: 120%;
@@ -371,6 +380,20 @@
 			display: block;
 			width: 100%;
 		}
+    .fc-row .fc-content-skeleton td, .fc-row .fc-helper-skeleton td {
+      border-color: #e6e6e6;
+      font-size: 120%;
+      padding: 10px 10px 10px 20px;
+    }
+	  a.fc-day-grid-event.fc-h-event.fc-event {
+			top: 0px;
+			margin-left: 25px;
+	  }
+    .fc-row.fc-week.fc-widget-content {
+      height: 49px !important;
+      min-height: initial !important;
+      overflow: hidden;
+    }
 	}
 	@media only screen and (max-width: 640px) {
 		.top-bar .top-bar-right {
@@ -536,7 +559,51 @@
 			width: 100%;
 			padding-top: 5px;
 		}
+  .blue-bg-section label {
+    background: #cde3f8;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 5px 2px;
+    margin: 0 5px 0 0;
+    color: #0472de;
+    position: relative;
+    z-index: 10;
+    font-weight: 500;
+    font-size: 90%;
+	  margin: 0 -2px 0 0;
+  }
+  .blue-bg-section input[type="submit"] {
+    display: none;
+  }
+		#block-custom-search {
+    padding-left: 10px;
+    padding-top: 10px;
+  }
+		.blue-bg-section form::before{
+			display: none;
+		}
+  .blue-bg-section form {
+    text-align: right;
+    margin-top: 20px;
+  }
+		.blue-bg-section label.last{
+			margin-right: 0;
+		}
+		.blue-bg-section label:before{
+			display: none;
+		}
+  .events-calendar h2 {
+    font-size: 260%;
+    margin-bottom: 20px;
+  }
+	.events-calendar #calendar h2 {
+    font-size: 150%;
+    margin-bottom: 0px;
+  }
+	#calendar .fc-toolbar {
+		margin-bottom: -20px;
 	}
+}
 	@media only screen and (max-width: 468px) {
 		.home-slider .button-group {
 			margin-bottom: 0px;
@@ -592,4 +659,18 @@
 			-webkit-transform: translateY(-50%);
 			transform: translateY(-50%);
 		}
+    .fc-row .fc-content-skeleton td, .fc-row .fc-helper-skeleton td {
+      border-color: #e6e6e6;
+      font-size: 100%;
+      padding: 5px 5px 5px 10px;
+    }
+	  a.fc-day-grid-event.fc-h-event.fc-event {
+			top: 0px;
+			margin-left: 25px;
+	  }
+    .fc-row.fc-week.fc-widget-content {
+      height: 35px !important;
+      min-height: initial !important;
+      overflow: hidden;
+    }
 	}
