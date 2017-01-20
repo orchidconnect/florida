@@ -557,6 +557,21 @@
 	a.fc-day-grid-event.fc-h-event.fc-event {
 		margin-left: 25px
 	}
+	.blue-bg-section label {
+	  padding: 10px 10px;
+    font-size: 100%;
+  }
+	.blue-bg-section label::before {
+	content:'';
+	display:block;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 38px solid #cde3f8;
+	width:60px;
+	position:absolute;
+	top:6px;
+	right:-10px;
+  }
 }
 @media only screen and (max-width: 468px) {
 	.home-slider .button-group {
@@ -621,4 +636,56 @@
 	.topics article .article-footer .columns .btn-readmore{
 		float: left;
 	}
+	.main-banner h1 {
+    padding-left: 10px;
+  }
+	.breadcrumb {
+    padding-left: 0px;
+  }
+	.main-banner .main-banner-inner .field-desc {
+    padding-left: 0px;
+  }
+	.main-banner .main-banner-inner h2 {
+		color: #7bc145;
+		font-size: 200%;
+		margin-top: 30px;
+		padding: 10px 30px;
+	}
+	.main-banner .main-banner-inner p {
+    padding: 10px 30px !important;
+  }
+	.main-banner .block-inner-banner {
+    border-right: 1px solid #e5e5e5;
+    padding-bottom: 0px;
+  }
+	#block-custom-search {
+    padding-left: 10px;
+    padding-top: 10px;
+  }
+	.blue-bg-section label {
+	  padding: 5px 4px;
+    font-size: 90%;
+		margin-right: -2px;
+  }
+	.blue-bg-section label::before {
+	  content:'';
+	  display:none;
+	  border-left: 10px solid transparent;
+	  border-right: 10px solid transparent;
+  	border-bottom: 38px solid #cde3f8;
+  	width:60px;
+  	position:absolute;
+  	top:6px;
+  	right:-10px;
+  }
+	.blue-bg-section label.last {
+    margin-right: 0px;
+  }
+	.blue-bg-section form::before, .blue-bg-section input[type="submit"]{
+		display: none;
+	}
+	.blue-bg-section form {
+    text-align: right;
+    margin-top: 20px;
+}
 }
