@@ -14,6 +14,9 @@
     .topics .columns:last-child:not(:first-child) {
         float: left !important;
     }
+    .featured-menu-bar .columns {
+      height: 115px;
+    }
 }
 @media only screen and (min-width: 1024px) { 
     .top-bar .top-bar-right {
@@ -137,11 +140,43 @@
         text-align: center;
     }
     .home-tabs .tabs-title a img {
-
     float: none;
     margin-right: 0px;
     margin-top: 0px;
     }
+    .featured-menu-bar .columns {
+    height: 98px;
+    }
+    .featured-menu-bar h3 {
+    position: relative;
+    padding: 0 10px;
+    margin-top: -145px;
+    margin-bottom: 0px;
+    color: #fff;
+    text-align: center;
+    font-size: 120%;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    text-transform: none;
+    font-weight: 900;
+  }
+    .featured-menu-bar a:hover h3 {
+    margin-top: -170px;
+   }
+    .featured-menu-bar p {
+
+    font-size: 100%;
+    color: rgba(255,255,255,0.8);
+}
+    .featured-menu-bar .columns {
+    width: 33.33%;
+}
+    .featured-menu-bar {
+    padding-left: 0;
+    padding-right: 0;
+    height: auto;
+    overflow: hidden;
+}
 }
 @media only screen and (max-width: 1200px) { 
     .home-slider .orbit-caption{
@@ -464,6 +499,38 @@
        font-size: 0;
        text-align: center;
     }
+
+    .featured-menu-bar .columns {
+        width: 100%;
+        position: relative;
+    }
+    .featured-menu-bar .columns img{
+        width: 100%;
+        height: auto;
+    }
+    .featured-menu-bar h3 {
+    margin-top: 0px;
+        font-size: 100%;
+  }
+   .featured-menu-bar a:hover h3 {
+    margin-top: 0px;
+   }
+  .featured-menu-bar p {
+    font-size: 100%;
+    color: rgba(255,255,255,0.8);
+    line-height: normal
+  }
+   featured-menu-bar {
+    padding-left: 0;
+    padding-right: 0;
+    height: auto;
+    overflow: hidden;
+  }
+  .featured-menu-bar a:hover p {
+    top: 55%;
+    transform: translateY(-50%);
+}
+    
 }
 @media only screen and (max-width: 468px) { 
     .home-slider .button-group {
@@ -507,4 +574,5 @@
        -webkit-transform: translateY(-50%);
        transform: translateY(-50%);
     }
+
 }
