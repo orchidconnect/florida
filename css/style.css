@@ -130,6 +130,11 @@ header .menu-main li {
     display: inline-block;
     margin-right: 35px;
 }
+header .menu-main li.active{
+    border-bottom: 2px solid #7bc145;
+    padding-bottom: 7px;
+    margin-bottom: -8px;
+}
 header .menu-main li:last-child{
     margin-right: 0;
 }
@@ -143,6 +148,13 @@ header .menu-main a {
   letter-spacing: 0.04em;
   float: left;
   width: auto;
+}
+header a:hover{
+    color: #7bc145;
+}
+header .menu-main li.active a{
+    background: none;
+    color: #7bc145;
 }
 header .menu-main li:last-child a{
     padding-right: 0;
@@ -574,6 +586,8 @@ img.footer-logo {
 	color:  #0472de;
 	position:relative;
 	z-index:10;
+    font-weight: 500;
+    font-size: 110%;
 }
 .blue-bg-section label span {
 	position:relative
@@ -589,7 +603,7 @@ img.footer-logo {
 	border-bottom: 49px solid #cde3f8;
 	width:60px;
 	position:absolute;
-	top:4px;
+	top:6px;
 	right:-10px;
     
 }
@@ -611,8 +625,9 @@ img.footer-logo {
     color: #0472de;
     right: 26px;
     text-transform: uppercase;
-    font-size: 100%;
-    letter-spacing: 0.04em;
+    font-size: 120%;
+    letter-spacing: 0.06em;
+    font-family: 'Futura New';
 }
 .blue-bg-section input#search {
     text-align:center;
@@ -627,7 +642,7 @@ img.footer-logo {
 }
 .blue-bg-section form::before {
     content:'';
-    background: url(images/icon-search-blue.png) no-repeat;
+    background: url(../images/icon-search-blue.png) no-repeat;
     display:block;
     height:22px;
     width:22px;

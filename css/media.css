@@ -4,9 +4,15 @@
      .home-tabs .tabs-title a {
    padding: 25px 0px;
  }
-    .home-tabs .tabs-panel .view-img{
-
-        
+    .blue-bg-section{
+        margin-top: 0;
+    }
+    .topics .large-4 {
+        width: 31%;
+        margin-right: 2%;
+    }
+    .topics .columns:last-child:not(:first-child) {
+        float: left !important;
     }
 }
 @media only screen and (min-width: 1024px) { 
@@ -135,6 +141,10 @@
     margin-right: 0px;
     margin-top: 0px;
     }
+    .topics{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
 @media only screen and (max-width: 1200px) { 
     .home-slider .orbit-caption{
@@ -143,6 +153,29 @@
         margin-left: 30px;
         margin-bottom: 75px;
         margin-left: 45px;
+    }
+    .topics article .article-footer {
+    position: relative;
+    left: auto;
+    right: auto;
+    bottom: auto;
+    text-align: center;
+    font-size: 13px;
+    padding: 20px 10px 0 10px;
+    }
+    .topics article .article-footer .columns{
+        width: 100%;
+ 
+    }
+    .topics article .article-footer .field-date {
+    font-size: 120%;
+    text-align: left;
+    }
+    .topics article .article-footer .columns:last-child{
+        padding-right: 0;
+    }
+    .topics article .row a.btn-readmore{
+        float: left;
     }
 }
 @media only screen and (max-width: 1024px) { 
@@ -286,6 +319,19 @@
     .topics article .article-footer .columns{
         width: 50%;
     }
+.events-calendar .sidebar a.link-ad{
+    text-align: center;
+}
+    .topics article .article-footer .field-date {
+    font-size: 120%;
+    text-align: left;
+    }
+    .topics article .article-footer .columns:last-child{
+        padding-right: 10px;
+    }
+    .topics article .row a.btn-readmore{
+        float: right;
+    }
 }
 @media only screen and (max-width: 960px) {
 	.licensing-requirements .block-inner-banner .featured-text {
@@ -347,6 +393,11 @@
        display: block; 
         width: 100%;
         text-align: center;
+    }
+    header .menu-main li.active {
+    border-bottom: 0;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
     }
     #top-menu .top-bar-left a {
         text-align: center !important;

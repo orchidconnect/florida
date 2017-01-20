@@ -58,7 +58,7 @@ td.fc-widget-content {}
 .fc-row .fc-content-skeleton td, .fc-row .fc-helper-skeleton td {
     border-color: #e6e6e6;
     font-size: 160%;
-    padding: 15px 10px 16px 10px;
+    padding: 15px 10px 16px 50px;
 }
 .fc-row .fc-content-skeleton td:hover, .fc-row .fc-helper-skeleton td:hover {
     background: #0472de;
@@ -76,30 +76,41 @@ td.fc-widget-content {}
 .fc-unthemed .fc-content, .fc-unthemed .fc-divider, .fc-unthemed .fc-list-heading td, .fc-unthemed .fc-list-view, .fc-unthemed .fc-popover, .fc-unthemed .fc-row, .fc-unthemed tbody, .fc-unthemed td, .fc-unthemed th, .fc-unthemed thead {
     border-color: #e6e6e6;
 }
-.fc-row .fc-content-skeleton td:hover .fc-content, .fc-row .fc-helper-skeleton td:hover .fc-content {
-    background: #fff !important;
-    color: #0472de;
-}
+
 .fc-unthemed .fc-row.fc-week.fc-widget-content tbody{}
 .fc-unthemed .fc-row.fc-week.fc-widget-content tbody td {
     background: none;
     position: relative;
 }
+.fc-unthemed .fc-row.fc-week.fc-widget-content tbody td.fc-event-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 9.3%;
+    max-height: 47px;
+    padding-right: 0;
+}
+.fc-unthemed .fc-row.fc-week.fc-widget-content tbody td.fc-event-container:hover{
+    background: rgba(4,114,222,0.8);
+}
 .fc-unthemed td.fc-today.fc-state-highlight {
     background: #ececec;
 }
 a.fc-day-grid-event.fc-h-event.fc-event {
-    position: absolute;
-    top: -55px;
+    top: 10px;
     border-radius: 25px;
     margin: 0;
     margin-left: 30px;
     width: 25px;
-    background: blue;
+    background: #0472de;
     display: block;
     line-height: 26px;
     text-align: center;
     border: 0;
+}
+.fc-unthemed .fc-row.fc-week.fc-widget-content tbody td.fc-event-container:hover a.fc-day-grid-event.fc-h-event.fc-event {
+    background: #fff;
+    color: #0472DE;
 }
 /* END CALENDAR */
 
