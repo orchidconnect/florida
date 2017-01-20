@@ -642,6 +642,20 @@
 	.block-number {
 			font-size: 180%;
 	}
+	.topics {
+			padding: 48px 30px;
+			margin-top: 0px;
+			border-top: 1px solid #e5e5e5;
+	}
+	.topics article {
+			min-height: auto;
+	}
+	.topics article .article-footer .field-date {
+    font-size: 120%;
+  }
+	.topics article .row a.btn-readmore {
+    font-size: 120%;
+  }
 }
 @media only screen and (max-width: 468px) {
 		.home-slider .button-group {
@@ -712,4 +726,12 @@
       min-height: initial !important;
       overflow: hidden;
     }
+		.topics article .article-footer .columns {
+			width: 100%;
+			text-align: left;
+		}
+		.topics article .row a.btn-readmore {
+			float: left;
+			margin-top: 5px;
+		}
 	}
