@@ -15,7 +15,10 @@
 		float: left !important;
 	}
 	.featured-menu-bar .columns {
-		height: 115px;
+		height: 123px;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
 	}
   .home-tabs .tabs-panel .view-desc {
     padding: 20px 25px 10px 25px;
