@@ -311,7 +311,11 @@
 	}
 	.topics .columns {
 		width: 100%;
-		margin-bottom: 20px
+		margin-bottom: 20px;
+		min-height: 100%;
+	}
+	.topics article {
+		min-height: auto;
 	}
 	.topics .columns .field-image img {
 		width: 100%
