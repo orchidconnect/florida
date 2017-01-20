@@ -39,6 +39,10 @@
  .home-slider .button-group .button:hover {
      background: #0472de;
  }
+.home-slider .button-group .button span{
+    display: inline-block;
+    width: 75px;
+}
  .home-slider .button img{
    height: 24px;
    top: 17px;

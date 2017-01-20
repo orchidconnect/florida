@@ -581,6 +581,15 @@
 	top:6px;
 	right:-10px;
   }
+	.home-slider .button-group .button span{
+    width: 100%;
+  }
+	.home-slider .button-group .button:nth-last-child(1) {
+    padding: 17px 10px 17px 55px;
+  }
+  .home-slider .button-group .button:nth-last-child(1) img {
+    left: 12px;
+  }
 }
 @media only screen and (max-width: 468px) {
 	.home-slider .button-group {
@@ -601,7 +610,7 @@
 	}
 	.home-slider .orbit-container {
 		height: auto !important;
-		background: #B1B1B1;
+		background: #EBEBEB;
 		position: relative
 	}
 	.home-slider .orbit-caption p {
