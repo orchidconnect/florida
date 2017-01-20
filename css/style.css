@@ -531,6 +531,9 @@ img.footer-logo {
 .is-accordion-submenu-parent > a {
     border-bottom:1px solid #f1f1f1;
 }
+.is-accordion-submenu-parent[aria-expanded="true"] > a::after{
+    display: none;
+}
 .menu-accordion {
     padding-left: 0;
     padding-right: 0;
