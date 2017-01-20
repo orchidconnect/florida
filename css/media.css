@@ -687,5 +687,8 @@
 	.blue-bg-section form {
     text-align: right;
     margin-top: 20px;
-}
+  }
+	.menu-accordion .submenu li {
+    margin-left: 10px !important;
+  }
 }
