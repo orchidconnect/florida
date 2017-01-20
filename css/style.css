@@ -496,6 +496,7 @@ img.footer-logo {
 .menu-accordion .menu > li > a{
     padding: 22px 22px 22px 85px;
     position: relative;
+    text-transform: uppercase;
 }
 .menu > li > a img, .menu > li > a i, .menu > li > a svg{
     margin-right: 8px;
@@ -550,6 +551,7 @@ img.footer-logo {
 	padding-left: 43px !important;
     font-size: 115%;
     letter-spacing: 0.35px;
+    text-transform: none;
 }
 .menu-accordion .submenu a::before{
 	content:'';
