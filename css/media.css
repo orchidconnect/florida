@@ -602,6 +602,16 @@
   .home-slider .button-group .button:nth-last-child(1) img {
     left: 12px;
   }
+  .simple-menu-bar-logos .columns:nth-child(even)::after {
+    content: '';
+    display: block;
+    width: 0px;
+    height: 40px;
+    background: #c5c5c5;
+    position: absolute;
+    top: 20px;
+    right: 0;
+  }
 }
 @media only screen and (max-width: 468px) {
 	.home-slider .button-group {
