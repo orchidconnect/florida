@@ -345,11 +345,24 @@
 	}
 }
 @media only screen and (max-width: 960px) {
-		.licensing-requirements .block-inner-banner .featured-text {
-			padding: 30px 20px 0 65px;
-			font-size: 130%;
-		}
+	.licensing-requirements .block-inner-banner .featured-text {
+		padding: 30px 20px 0 65px;
+		font-size: 130%;
 	}
+  .breadcrumb {
+    padding-bottom: 15px;
+    padding-left: 0px;
+  }
+  .main-banner h1 {
+    padding-left: 10px;
+  }
+	.main-banner .main-banner-inner h2 {
+    padding-left: 0;
+  }
+  .main-banner .main-banner-inner p {
+    padding-left: 0px;
+  }
+}
 @media only screen and (max-width: 768px) {
 		.licensing-requirements .block-inner-banner .featured-text {
 			padding: 70px 20px 0 65px;
@@ -603,8 +616,9 @@
 	#calendar .fc-toolbar {
 		margin-bottom: -20px;
 	}
+
 }
-	@media only screen and (max-width: 468px) {
+@media only screen and (max-width: 468px) {
 		.home-slider .button-group {
 			margin-bottom: 0px;
 			margin-top: 0px;
