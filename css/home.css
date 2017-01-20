@@ -113,15 +113,19 @@
  .home-tabs .tabs {
      border: none;
  }
+.home-tabs .tabs-title{
+    width: 33.33%;
+}
  .home-tabs .tabs-title a {
-   padding: 25px;
+   padding: 25px 0;
    font-size: 120%;
+   text-align: center;
  }
  .home-tabs .tabs-title a img {
    height: 20px;
-     float: left;
-     margin-right: 5px;
-     margin-top: -1px;
+   margin-right: 5px;
+   margin-bottom: -3px;
+   display: inline-block;
  }
  .home-tabs .tabs-title.is-active a img {
     webkit-filter: grayscale(10) brightness(10);
@@ -143,6 +147,7 @@
  }
 .home-tabs .tabs-panel .view-img img{
     display: block;
+    width: 100%;
 }
  .home-tabs .tabs-panel .view-desc{
      padding: 29px 25px 10px 25px;

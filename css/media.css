@@ -2,7 +2,7 @@
 
 @media only screen and (max-width: 1600px) { 
      .home-tabs .tabs-title a {
-   padding: 25px 20px;
+   padding: 25px 0px;
  }
     .home-tabs .tabs-panel .view-img{
 
@@ -54,7 +54,7 @@
         font-size: 100%;
     }
    .home-tabs .tabs-title a {
-      padding: 15px 10px;
+      padding: 15px 0px;
     }
 }
 @media only screen and (max-width: 1280px) { 
@@ -111,8 +111,13 @@
         width: 100%;
         
     }
+    .home-tabs .tabs-panel{
+        border: 3px solid #0472de;
+    }
+    .home-tabs .tabs-panel .view-img {
+        border: 0;
+    }
     .home-tabs .tabs-panel .view-desc{
-        padding-top: 0 !important;
         width: 50%;
         float: right;
     }
@@ -120,7 +125,7 @@
     width: 80%;
     }
     .home-tabs .tabs-title a {
-       font-size: 0;
+       font-size: 120%;
        min-width: 50px;
         text-align: center;
     }
@@ -440,6 +445,10 @@
       /*display: none;*/
 	  font-size: 99%;
 	  padding: 90px 20px 0 20px;
+    }
+    .home-tabs .tabs-title a {
+       font-size: 0;
+       text-align: center;
     }
 }
 @media only screen and (max-width: 468px) { 
