@@ -362,6 +362,9 @@
   .main-banner .main-banner-inner p {
     padding-left: 0px;
   }
+  .licensing-requirements .main-banner .title {
+    padding-left: 10px;
+  }
 }
 @media only screen and (max-width: 768px) {
 		.licensing-requirements .block-inner-banner .featured-text {
@@ -532,7 +535,17 @@
 		.licensing-requirements .block-inner-banner .featured-text {
 			/*display: none;*/
 			font-size: 99%;
-			padding: 90px 20px 0 20px;
+			padding: 120px 33px 0 33px;
+			margin-bottom: 10px;
+		}
+		.licensing-requirements .block-inner-banner .field-name-body {
+				padding-top: 0px;
+		}
+		.block-inner-banner .field-name-body .field-item h2 {
+				line-height: normal;
+		}
+		.licensing-requirements .block-inner-banner .field-name-body .field-item {
+				padding: 0 33px 0 33px;
 		}
 		.home-tabs .tabs-title a {
 			font-size: 0;
@@ -616,7 +629,19 @@
 	#calendar .fc-toolbar {
 		margin-bottom: -20px;
 	}
-
+	.main-banner h1 {
+			font-size: 180%;
+	}
+  .main-banner .main-banner-inner .field-desc {
+    margin-top: -60px;
+    padding-left: 30px;
+  }
+	.block-list {
+			margin-left: 30px;
+	}
+	.block-number {
+			font-size: 180%;
+	}
 }
 @media only screen and (max-width: 468px) {
 		.home-slider .button-group {
