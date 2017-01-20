@@ -341,6 +341,10 @@
 	.topics article .row a.btn-readmore {
 		float: right
 	}
+	.topics article .article-footer .columns {
+		width: 50%;
+		height: auto !important;
+	}
 }
 @media only screen and (max-width: 960px) {
 	.licensing-requirements .block-inner-banner .featured-text {
@@ -606,4 +610,11 @@
     #calendar .fc-view-container {
        margin-top: 0px;
     }
+	.topics article .article-footer .columns {
+		width: 100%;
+		height: auto !important;
+	}
+	.topics article .article-footer .columns .btn-readmore{
+		float: left;
+	}
 }
