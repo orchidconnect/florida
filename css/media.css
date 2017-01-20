@@ -187,6 +187,15 @@
 	a.fc-day-grid-event.fc-h-event.fc-event {
 		margin-left: 25px
 	}
+	.menu-accordion .submenu a{
+		position: relative;
+	}
+	.menu-accordion .submenu a::before {
+			margin-right: 3px;
+		position: absolute;
+		left: 25px;
+		top: 25px;
+	}
 }
 @media only screen and (max-width: 1024px) {
 	.top-bar .top-bar-left {
