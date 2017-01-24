@@ -7,9 +7,8 @@
     <title>Florida Realtors | Welcome</title>
 	
 	<!-- move these to .info during theming -->
-	<!-- <link rel="stylesheet" type="text/css" href="bower_components/foundation-sites/dist/css/foundation.min.css" />
-	<link rel="stylesheet" type="text/css" href="bower_components/motion-ui/dist/motion-ui.min.css" /> -->
 	<link rel="stylesheet" type="text/css" href="css/app.css" />
+	<link rel="stylesheet" type="text/css" href="css/global.css" />
 	<link rel="stylesheet" type="text/css" href="css/home.css" />
 	<link rel="stylesheet" type="text/css" href="css/media.css" />
 
@@ -38,8 +37,8 @@
       <div class="small-full large-10 columns site-top-bar">
 	  
 		<div class="title-bar" data-responsive-toggle="top-menu" data-hide-for="medium">
-		  <button class="menu-icon" type="button" data-toggle="top-menu"></button>
-		  <div class="title-bar-title">Menu</div>
+		  <button class="menu-icon" type="button" data-toggle="top-menu"><div class="title-bar-title">Menu</div></button>
+		  
 		</div>
 
 		<div class="top-bar" id="top-menu">
@@ -83,7 +82,27 @@
 						<div class="content">
 								<ul class="menu menu-right">
 									<li>
-										<a class="" href="#"><img alt="Search icon" class="icon" src="images/icon-search.png"> Search</a>
+										<a href="#" data-toggle="block-search-form" >
+											<img alt="Search icon" class="icon" src="images/icon-search.png"> Search
+										</a>
+										<div id="block-search-form" class="block block-search dropdown-pane bottom" data-dropdown>
+											<div class="content">
+												<form action="/" method="post" id="search-block-form" accept-charset="UTF-8">
+													<div>
+														<div class="container-inline">
+															<h2 class="element-invisible hide">Search form</h2>
+															<div class="form-item form-type-textfield form-item-search-block-form">
+																<label class="element-invisible" for="edit-search-block-form--2">Search </label>
+																<input title="Enter the terms you wish to search for." id="edit-search-block-form--2" name="search_block_form" value="" size="15" maxlength="128" class="form-text" placeholder="Search" type="text">
+															</div>
+															<div class="form-actions form-wrapper" id="edit-actions">
+																<input id="edit-submit" name="op" value="Search" class="form-submit" type="submit">
+															</div>
+														</div>
+													</div>
+												</form>  
+											</div>
+										</div>
 									</li>
 									<li>
 										<a class="button" href="#">Login</a>
@@ -573,6 +592,7 @@
     </footer>
 	<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
 	<script type="text/javascript" src="bower_components/foundation-sites/dist/js/foundation.min.js"></script>
+    <script src="bower_components/foundation-sites/dist/js/plugins/foundation.drilldown.min.js"></script>
     <script src="bower_components/foundation-sites/dist/js/plugins/foundation.accordionMenu.js"></script>
     <script src="bower_components/foundation-sites/dist/js/plugins/foundation.util.motion.min.js"></script>
     <script src="bower_components/foundation-sites/dist/js/plugins/foundation.util.keyboard.min.js"></script>

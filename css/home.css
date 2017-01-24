@@ -202,11 +202,12 @@
 	right: 0
 }
 .featured-menu-bar a:hover::before {
-	background: green
+	background: rgba(123,193,69, .9)
 }
 .featured-menu-bar img {
 	border: 0;
-	width: 100%
+	width: auto;
+	height: 100%;
 }
 .featured-menu-bar p {
 	position: relative;
