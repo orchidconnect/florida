@@ -159,6 +159,10 @@
 	.home-tabs .tabs-panel {
 		border: 3px solid #0472de;
 		padding-bottom: 0;
+		height: auto;
+	}
+	.home-tabs .tabs-panel.is-active{
+		display: table;
 	}
 	.home-tabs .tabs-panel .view-img {
 		border: 0;
@@ -291,7 +295,7 @@
 	}
 	.featured-menu-bar .columns img {
 		width: 100%;
-		height: auto
+		height: 100%
 	}
 	.featured-menu-bar h3 {
 		margin-top: 0px;
