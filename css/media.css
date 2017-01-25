@@ -30,6 +30,9 @@
 			font-weight: normal;
 			margin-bottom: 0px;
 	}
+	.blue-bg-section label::before {
+			border-bottom: 41px solid #cde3f8;
+	}
 }
 @media only screen and (min-width: 1024px) {
 	.top-bar .top-bar-right {
@@ -91,6 +94,13 @@
 			top: 5px;
 			margin-left: 25px;
 	}
+	.block-filters {
+			margin: 30px 0 0 0px;
+			position: relative;
+	}
+	.fc-toolbar.fc-header-toolbar {
+    margin-top: 10px;
+  }
 }
 @media only screen and (max-width: 1280px) {
 	header .menu-main li {
@@ -390,6 +400,7 @@
 	.licensing-requirements .block-inner-banner .featured-text {
 		padding: 30px 20px 0 65px;
 		font-size: 130%;
+		margin-top: -150px;
 	}
   .breadcrumb {
     padding-bottom: 15px;
@@ -407,11 +418,22 @@
   .licensing-requirements .main-banner .title {
     padding-left: 10px;
   }
+	.fc-toolbar.fc-header-toolbar {
+    margin-top: 55px;
+  }
+	.fc-toolbar.fc-header-toolbar .fc-right{
+		width: auto;
+		display: table;
+		float: left;
+		margin-left: -19px;
+		text-align: center;
+	}
 }
 @media only screen and (max-width: 768px) {
 		.licensing-requirements .block-inner-banner .featured-text {
 			padding: 70px 20px 0 65px;
 			font-size: 120%;
+			margin-top: -180px;
 		}
 		header .menu-main a {
 			font-size: 100%;
@@ -607,9 +629,10 @@
 			font-size: 99%;
 			padding: 120px 33px 0 33px;
 			margin-bottom: 10px;
+			margin-top: -200px;
 		}
 		.licensing-requirements .block-inner-banner .field-name-body {
-				padding-top: 0px;
+				padding-top:30px;
 		}
 		.block-inner-banner .field-name-body .field-item h2 {
 				line-height: normal;
@@ -697,6 +720,12 @@
 	.topics article .row a.btn-readmore {
     font-size: 120%;
   }
+  .main-banner .main-banner-inner .field-image {
+    height: 250px;
+	}
+	.main-banner .main-banner-inner .field-image::after{
+		background-size: auto 100%;
+	}
 }
 @media only screen and (max-width: 468px) {
 		.home-slider .button-group {
@@ -774,5 +803,14 @@
 		.topics article .row a.btn-readmore {
 			float: left;
 			margin-top: 5px;
+		}
+   .main-banner .main-banner-inner .field-image {
+     height: 180px;
+	 }
+	 .licensing-requirements .block-inner-banner .featured-text {
+			margin-top: -150px;
+		}
+		.licensing-requirements .block-inner-banner .field-name-body {
+			margin-top: 30px;
 		}
 	}
