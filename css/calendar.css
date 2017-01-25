@@ -169,6 +169,8 @@ a.fc-day-grid-event.fc-h-event.fc-event {
 .block-filters{
 	margin: -14px 0 0 175px;
 	position: absolute;
+	display: table;
+	width: auto;
 }
 .block-filters .filter{
 	font-size: 180%;
