@@ -5,9 +5,8 @@
 	<meta content="ie=edge" http-equiv="x-ua-compatible">
 	<meta content="width=device-width, initial-scale=1.0" name="viewport">
 	<title>Florida Realtors | Welcome</title><!-- move these to .info during theming -->
-	<!-- <link rel="stylesheet" type="text/css" href="bower_components/foundation-sites/dist/css/foundation.min.css" />
-    <link rel="stylesheet" type="text/css" href="bower_components/motion-ui/dist/motion-ui.min.css" /> -->
 	<link href="css/app.css" rel="stylesheet" type="text/css">
+		<link href="css/global.css" rel="stylesheet" type="text/css">
 	<link href="css/media.css" rel="stylesheet" type="text/css">
 </head>
 <body class="licensing-requirements">
@@ -78,7 +77,27 @@
 						<div class="content">
 								<ul class="menu menu-right">
 									<li>
-										<a class="" href="#"><img alt="Search icon" class="icon" src="images/icon-search.png"> Search</a>
+										<a href="#" data-toggle="block-search-form" >
+											<img alt="Search icon" class="icon" src="images/icon-search.png"> Search
+										</a>
+										<div id="block-search-form" class="block block-search dropdown-pane bottom" data-dropdown>
+											<div class="content">
+												<form action="/" method="post" id="search-block-form" accept-charset="UTF-8">
+													<div>
+														<div class="container-inline">
+															<h2 class="element-invisible hide">Search form</h2>
+															<div class="form-item form-type-textfield form-item-search-block-form">
+																<label class="element-invisible" for="edit-search-block-form--2">Search </label>
+																<input title="Enter the terms you wish to search for." id="edit-search-block-form--2" name="search_block_form" value="" size="15" maxlength="128" class="form-text" placeholder="Search" type="text">
+															</div>
+															<div class="form-actions form-wrapper" id="edit-actions">
+																<input id="edit-submit" name="op" value="Search" class="form-submit" type="submit">
+															</div>
+														</div>
+													</div>
+												</form>  
+											</div>
+										</div>
 									</li>
 									<li>
 										<a class="button" href="#">Login</a>
@@ -131,7 +150,9 @@
 										<div class="field field-name-field-image field-type-image field-label-hidden main-banner-inner">
 											<div class="field-items">
 												<div class="field-item">
-													<img alt="Becoming a successful real estate agent" src="images/banner-become-real-state-agent.jpg">
+													<div class="field-image">
+														<img alt="Becoming a successful real estate agent" src="images/banner-licensing.png">
+													</div>
 													<p class="featured-text">Becoming a successful real estate agent requires a commitment of time, money and pre-licensing education.</p>
 												</div>
 											</div>
