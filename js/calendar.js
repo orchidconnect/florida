@@ -42,5 +42,9 @@ $(document).ready(function() {
 		if ($(this).is(':checked')) $('label[for="search-type-resources"]').addClass('active');
 	});
 	$('#search-type-keyword').trigger('change');
+	
+	$("a.filter").click(function(){
+            return false;
+	});
 	  
  });

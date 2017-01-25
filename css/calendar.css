@@ -3,6 +3,7 @@
 .events-calendar h2 {
 	font-size: 260%;
 	margin-bottom: -20px;
+	margin-top: 4px;
 }
 #block-custom-search {
 	padding-left: 40px;
@@ -165,4 +166,47 @@ a.fc-day-grid-event.fc-h-event.fc-event {
 	width: 200px;
 }
 
+.block-filters{
+	margin: -14px 0 0 175px;
+	position: absolute;
+}
+.block-filters .filter{
+	font-size: 180%;
+	font-weight: normal;
+	color: #2f3034;
+	display: table;
+}
+.block-filters .filter .current-value{
+	color: #0081ff;
+}
+.block-filters .filter:after{
+	content:"";
+	display: table;
+	float: right;
+	margin-left: 10px;
+	width: 19px;
+	height: 19px;
+	position: relative;
+	top: 6px;
+	background: transparent url(../images/arrow-down.png) no-repeat top left;
+}
+.block-filters .filter:hover:after{
+	background: transparent url(../images/arrow-down.png) no-repeat top right;
+}
+.block-filters .menu.right{
+	float: right !important;
+	left: auto !important;
+	right: 0;
+	padding: 0;
+}
+.block-filters .menu li{
+	width: 100%;
+	display: table;
+}
+.block-filters .menu li:hover{
+	background: #F2F2F2;
+}
+.fc-button:hover .fc-icon::after {
+  color: #0081ff
+}
 /* END EVENTS CALENDAR */
