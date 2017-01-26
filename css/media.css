@@ -33,6 +33,19 @@
 	.blue-bg-section label::before {
 			border-bottom: 41px solid #cde3f8;
 	}
+	.top-bar .top-bar-left {
+		max-width:900px;
+		padding-left: 30px;
+	}
+.simple-menu-bar-links a {
+	margin: 11px 0px 12px;
+	height: 40px;
+	width: 40px;
+}
+	.simple-menu-bar-links a img{
+		max-height: 22px;
+   margin-top: 0px;
+	}
 }
 @media only screen and (min-width: 1024px) {
 	.top-bar .top-bar-right {
@@ -101,6 +114,20 @@
 	.fc-toolbar.fc-header-toolbar {
     margin-top: 10px;
   }
+	.simple-menu-bar-links a {
+		margin: 11px 0px 12px;
+		height: 40px;
+		width: 40px;
+	}
+	.simple-menu-bar-links a img{
+		max-height: 22px;
+   margin-top: 0px;
+	}
+	.simple-menu-bar-links span {
+			letter-spacing: 0.5px;
+			margin: 0px 10px 0 10px;
+			padding: 25px 0;
+	}
 }
 @media only screen and (max-width: 1280px) {
 	header .menu-main li {
@@ -163,6 +190,7 @@
 	}
 	.home-tabs .tabs-panel.is-active{
 		display: table;
+		width: 100%;
 	}
 	.home-tabs .tabs-panel .view-img {
 		border: 0;
@@ -215,6 +243,17 @@
 		padding-right: 0;
 		height: auto;
 		overflow: hidden;
+	}
+	.simple-menu-bar-links{
+		display: block;
+		width: 100%;
+		text-align: center;
+	}
+	.simple-menu-bar-links span{
+		float: none;
+	}
+	.simple-menu-bar-logos{
+		width: 100%;
 	}
 }
 @media only screen and (max-width: 1200px) {

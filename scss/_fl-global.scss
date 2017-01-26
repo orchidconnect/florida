@@ -44,12 +44,15 @@ p {
   font-weight: normal;
 }
 
-.hidden {
+.hidden, .hide {
   display: none;
 }
 
-/* END GLOBAL */
+input, select, textarea, button {
+  font-family: "Futura New";
+}
 
+/* END GLOBAL */
 /* HEADER */
 
 header {
@@ -60,6 +63,7 @@ header {
     background: #fff;
     padding-left: 0;
     padding-right: 2px;
+    padding-top: 12px;
     ul {
       background: #fff;
     }
@@ -103,7 +107,7 @@ header {
     }
     a {
       text-transform: uppercase;
-      font-size: 120%;
+      font-size: 18px;
       padding-top: 3px;
       padding-left: 3px;
       padding-right: 0;
@@ -165,8 +169,18 @@ header {
   }
 }
 
-/* END HEADER */
+.site-top-bar .menu-icon {
+  width: auto;
+  display: table;
+  padding-left: 25px;
+  color: #fff;
+  background: #0D72DC;
+  &::after {
+    width: 20px;
+  }
+}
 
+/* END HEADER */
 /* FOOTER */
 
 footer {
@@ -180,7 +194,7 @@ footer {
 }
 
 .front footer {
-  background: #fff;
+  background: #F9F9F9;
   margin-top: 0px;
 }
 
@@ -203,14 +217,12 @@ img.footer-logo {
 }
 
 /* END FOOTER */
-
 /* BUTTONS */
 
 .button {
   background: #7abf55;
   text-transform: uppercase;
   line-height: 1.1;
-  &:hover {}
   img {
     height: 20px;
     top: 17px;
@@ -220,13 +232,8 @@ img.footer-logo {
 }
 
 /* END BUTTONS */
-
 /* SOCIAL LINKS */
-
-.social-link {}
-
 /* END SOCIAL LINK */
-
 /* IMAGE BACKGROUND SECTION */
 
 .image-bg-section {
@@ -246,14 +253,13 @@ img.footer-logo {
 }
 
 /* END IMAGE BACKGROUND SECTION */
-
 /* BANNERS SIDEBAR */
 
 .banners-sidebar {
   padding-right: 0;
   padding-left: 0;
   background: #ebebeb;
-  padding: 20px 33px 0;
+  padding: 30px 33px 0;
   margin: 0;
   p {
     text-align: center;
@@ -261,10 +267,12 @@ img.footer-logo {
       padding-bottom: 20px;
     }
   }
+  .content img {
+    margin-bottom: 20px;
+  }
 }
 
 /* END BANNERS SIDEBAR */
-
 /* SHADOW TOP SECTIONS */
 
 .shadow-top {
@@ -276,12 +284,12 @@ img.footer-logo {
   &::before {
     content: '';
     display: block;
-    height: 30px;
-    box-shadow: 0 10px 15px rgba(224, 224, 224, 0.66) inset;
+    height: 40px;
+    box-shadow: 0 10px 11px rgba(0, 0, 0, 0.2) inset;
     margin-left: -10px;
     margin-right: -10px;
     display: block;
-    margin-bottom: -30px;
+    margin-bottom: -40px;
     z-index: 1;
     position: relative;
   }
@@ -309,7 +317,7 @@ img.footer-logo {
   }
   .block.image-bg-section {
     h3 {
-      margin: 30px 45px 10px 45px;
+      margin: 25px 45px 20px 45px;
     }
     p {
       margin: 5px 45px;
@@ -321,14 +329,25 @@ img.footer-logo {
       margin-left: 45px;
       display: table;
       width: auto;
-      padding: 20px 35px;
+      padding: 20px 32.5px;
       background: #0E72DC;
+      min-width: 140px;
+    }
+    .field-image:after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      position: absolute;
+      background: transparent url(../images/gradient-white-home.png) repeat-x top left;
     }
   }
 }
 
 /* END SHADOW TOP SECTIONS */
-
 /* SPONSORS BAR */
 
 .sponsors-bar {
@@ -363,7 +382,6 @@ img.footer-logo {
 }
 
 /* END SPONSORS BAR */
-
 /* BREADCRUMBS */
 
 .breadcrumbs {
@@ -418,7 +436,6 @@ img.footer-logo {
 }
 
 /* END BREADCRUMBS */
-
 /* MAIN-BANNER */
 
 .content-top {
@@ -438,18 +455,34 @@ img.footer-logo {
   .column {
     padding-left: 30px !important;
   }
-  .main-banner-inner .featured-text {
-    font-size: 16px;
-    color: #000;
-    margin-top: -60px;
-    margin-bottom: 30px;
+  .main-banner-inner {
+    .field-image {
+      height: 365px;
+      overflow: hidden;
+      position: relative;
+      &:after {
+        content: "";
+        display: block;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        position: absolute;
+        background: transparent url(../images/gradient-white-inner.png);
+      }
+    }
+    .featured-text {
+      font-size: 16px;
+      color: #000;
+      margin-top: -60px;
+      margin-bottom: 30px;
+    }
   }
   h1 {
     font-family: 'Futura New Demi';
     padding-left: 65px;
     font-weight: normal;
     font-size: 228%;
-    margin-bottom: 10px;
+    margin-bottom: 14px;
     margin-top: 15px;
     letter-spacing: 0.002em;
   }
@@ -478,7 +511,6 @@ img.footer-logo {
 }
 
 /* END MAIN-BANNER */
-
 /* SUBMENU */
 
 .menu-accordion {
@@ -590,7 +622,6 @@ img.footer-logo {
 }
 
 /* END SUBMENU */
-
 /* BLUE BG SECTION */
 
 .blue-bg-section {
@@ -684,7 +715,7 @@ img.footer-logo {
 }
 
 .block-featured {
-  padding: 30px 30px 0 30px;
+  padding: 25px 30px 0 30px;
   line-height: normal;
   img {
     margin-bottom: 20px;
@@ -706,7 +737,6 @@ img.footer-logo {
 }
 
 /* END BLUE BG SECTION */
-
 /* GRAY SECTION */
 
 .gray-bg-section {
@@ -714,7 +744,6 @@ img.footer-logo {
 }
 
 /* END GRAY SECTION */
-
 /* TOPICS */
 
 .topics {
@@ -748,7 +777,7 @@ img.footer-logo {
       font-family: 'Futura New';
       text-transform: none;
       font-size: 145%;
-      margin-bottom: 3px;
+      margin-bottom: 10px;
     }
     p {
       line-height: 1.3;
@@ -787,7 +816,7 @@ footer {
     margin-left: -15px;
     margin-top: 9px;
     li {
-      margin-bottom: 2px;
+      margin-bottom: 10px;
     }
   }
   .block-menu-primary {
@@ -814,7 +843,7 @@ footer {
     margin-left: 14px;
     border: 1px solid redt;
     li {
-      margin-bottom: 2px;
+      margin-bottom: 10px;
     }
     .horizontal {
       margin-top: 30px;
@@ -836,14 +865,17 @@ footer {
   margin-top: 15px;
   hr {
     max-width: 1120px;
+    margin-bottom: 14px !important;
   }
   span {
-    color: rgba(0, 0, 0, 0.5);
+    color: rgba(0, 0, 0, 0.35);
+  }
+  .menu {
+    margin-bottom: 10px;
   }
 }
 
 /* END TOPICS */
-
 /* LICENSING */
 
 main .block-inner-banner .field-name-body {
@@ -858,17 +890,19 @@ main .block-inner-banner .field-name-body {
   .block-inner-banner {
     .featured-text {
       padding: 0 20px 0 65px;
-      margin-top: -128px;
+      margin-top: -118px;
       margin-bottom: 34px;
       font-size: 150%;
       font-weight: normal;
       font-family: 'Futura New Demi';
       letter-spacing: -0.3px;
       color: #2f3034;
+      position: absolute;
     }
     .field-name-body {
       color: #8d8d8d;
-      padding-top: 22px;
+      padding-top: 0px;
+      margin-top: -40px;
       letter-spacing: 0.045em;
       .field-item {
         padding: 0 90px 0 33px;
@@ -891,7 +925,7 @@ main .block-inner-banner .field-name-body {
       letter-spacing: -0.2px;
       text-transform: none;
       font-weight: normal;
-      margin-bottom: 25px;
+      margin-bottom: 10px;
       font-family: "Futura New Demi";
       color: #2f3034;
     }
@@ -949,4 +983,31 @@ main .block-inner-banner .field-name-body {
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+/* SEARCH */
+
+#block-search-form {
+  left: auto !important;
+  right: 0;
+  label {
+    display: none;
+  }
+  .form-submit {
+    font-size: 120%;
+    font-weight: normal;
+    display: table;
+    width: auto;
+    padding: 5px 5px;
+    background: #0E72DC;
+    margin-top: 5px;
+    border: 0;
+    float: right;
+    margin-right: 0;
+    font-size: 100%;
+    color: #fff;
+  }
+  input.form-text {
+    max-width: 100% !important;
+  }
 }
